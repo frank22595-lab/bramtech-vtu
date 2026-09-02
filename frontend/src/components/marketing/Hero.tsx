@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Shield, CheckCircle2, Wifi, Phone, Tv, Zap as ZapIcon } from 'lucide-react';
-import { formatNaira } from '@/lib/utils';
+import { formatNaira } from '../../lib/utils';
 
 export function Hero() {
   return (

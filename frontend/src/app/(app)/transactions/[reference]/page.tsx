@@ -5,9 +5,9 @@ import { useQuery } from '@tanstack/react-query';
 import { ArrowLeft, Loader2, Share2, Download, CheckCircle2, XCircle, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
-import { api } from '@/lib/api';
-import { formatNaira, formatDate, statusBadgeClass, networkLogo, cn } from '@/lib/utils';
-import { Transaction } from '@/types';
+import { api } from '../../../../lib/api';
+import { formatNaira, formatDate, statusBadgeClass, networkLogo, cn } from '../../../../lib/utils';
+import { Transaction } from '../../../../types';
 
 export default function TransactionDetailPage({ params }: { params: { reference: string } }) {
   const { reference } = params;

@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Logo } from '@/components/Logo';
-import { site } from '@/lib/site';
-import { cn } from '@/lib/utils';
+import { Logo } from '../../components/Logo';
+import { site } from '../../lib/site';
+import { cn } from '../../lib/utils';
 
 export function MarketingNav() {
   const [scrolled, setScrolled] = useState(false);

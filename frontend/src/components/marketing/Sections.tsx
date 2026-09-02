@@ -8,7 +8,7 @@ import {
   Shield, HeadphonesIcon, Clock, DollarSign, ChevronDown, Star,
 } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '../../lib/utils';
 
 // ================= Services grid =================
 export function Services() {

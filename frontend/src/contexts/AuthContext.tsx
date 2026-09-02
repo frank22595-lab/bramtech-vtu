@@ -1,8 +1,8 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { api, clearTokens, getAccessToken, setTokens } from '@/lib/api';
-import { AuthResponse, User } from '@/types';
+import { api, clearTokens, getAccessToken, setTokens } from '../lib/api';
+import { AuthResponse, User } from '../types';
 
 interface AuthCtx {
   user: User | null;

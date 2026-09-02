@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Instagram, Twitter, Facebook, Linkedin, MessageCircle } from 'lucide-react';
-import { Logo } from '@/components/Logo';
-import { site } from '@/lib/site';
+import { Logo } from '../../components/Logo';
+import { site } from '../../lib/site';
 
 export function MarketingFooter() {
   return (

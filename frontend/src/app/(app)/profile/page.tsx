@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { User as UserIcon, Shield, Copy, Check, Loader2, Award, CheckCircle2 } from 'lucide-react';
-import { api } from '@/lib/api';
-import { useAuth } from '@/contexts/AuthContext';
+import { api } from '../../../lib/api';
+import { useAuth } from '../../../contexts/AuthContext';
 
 const TIER_LABELS: Record<string, string> = {
   regular: 'Regular User',
