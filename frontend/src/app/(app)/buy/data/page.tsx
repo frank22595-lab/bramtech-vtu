@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import { Loader2, Wifi, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { api } from '@/lib/api';
-import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '@/lib/utils';
-import { Service, ServiceVariation } from '@/types';
+import { api } from '../../../../lib/api';
+import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '../../../../lib/utils';
+import { Service, ServiceVariation } from '../../../../types';
 
 export default function BuyDataPage() {
   const router = useRouter();

@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import { Loader2, Phone, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { api } from '@/lib/api';
-import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '@/lib/utils';
-import { Service, ServiceVariation } from '@/types';
+import { api } from '../../../../lib/api';
+import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '../../../../lib/utils';
+import { Service, ServiceVariation } from '../../../../types';
 
 const PRESET_AMOUNTS = [100, 200, 500, 1000, 2000, 5000];
 
