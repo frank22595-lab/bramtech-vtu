@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import { Loader2, Zap, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { api } from '../../../../lib/api';
-import { generateIdempotencyKey, cn } from '../../../../lib/utils';
-import { Service, ServiceVariation } from '../../../../types';
+import { api } from '@/lib/api';
+import { generateIdempotencyKey, cn } from '@/lib/utils';
+import { Service, ServiceVariation } from '@/types';
 
 export default function BuyElectricityPage() {
   const router = useRouter();
