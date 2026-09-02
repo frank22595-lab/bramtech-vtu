@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { Copy, Check, Sparkles, Share2, MessageCircle } from 'lucide-react';
 import { toast } from 'sonner';
-import { useAuth } from '../../../contexts/AuthContext';
-import { site } from '../../../lib/site';
+import { useAuth } from '../contexts/AuthContext';
+import { site } from '../lib/site';
 
 export default function ReferPage() {
   const { user } = useAuth();

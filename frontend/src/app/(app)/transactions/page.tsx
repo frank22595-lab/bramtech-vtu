@@ -4,9 +4,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useQuery } from '@tanstack/react-query';
 import { Loader2, ShoppingBag } from 'lucide-react';
-import { api } from '../../../lib/api';
-import { formatNaira, statusBadgeClass, timeAgo, networkLogo, cn } from '../../../lib/utils';
-import { Transaction } from '../../../types';
+import { api } from '../lib/api';
+import { formatNaira, statusBadgeClass, timeAgo, networkLogo, cn } from '../lib/utils';
+import { Transaction } from '../types';
 
 const STATUSES = ['all', 'processing', 'success', 'failed', 'refunded'];
 

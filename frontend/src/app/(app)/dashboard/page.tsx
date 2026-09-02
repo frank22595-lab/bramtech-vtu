@@ -9,10 +9,10 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { api } from '../../../lib/api';
-import { useAuth } from '../../../contexts/AuthContext';
-import { formatNaira, formatDate, statusBadgeClass, timeAgo, networkLogo, cn } from '../../../lib/utils';
-import { Transaction } from '../../../types';
+import { api } from '../lib/api';
+import { useAuth } from '../contexts/AuthContext';
+import { formatNaira, formatDate, statusBadgeClass, timeAgo, networkLogo, cn } from '../lib/utils';
+import { Transaction } from '../types';
 
 const QUICK = [
   { href: '/buy/airtime', icon: Phone, label: 'Airtime', color: 'from-blue-500 to-blue-700' },
