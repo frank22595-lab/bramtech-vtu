@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import { Loader2, Tv, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { api } from '@/lib/api';
-import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '@/lib/utils';
-import { Service, ServiceVariation } from '@/types';
+import { api } from '../helpers';
+import { formatNaira, generateIdempotencyKey, networkLogo, cn } from '../helpers';
+import { Service, ServiceVariation } from '../helpers';
 
 export default function BuyCablePage() {
   const router = useRouter();
