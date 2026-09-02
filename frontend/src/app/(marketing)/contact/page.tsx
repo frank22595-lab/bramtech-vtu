@@ -1,5 +1,5 @@
 import { MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
-import { site } from '../lib/site';
+import { site } from '../../lib/site';
 
 export const metadata = { title: 'Contact us' };
 

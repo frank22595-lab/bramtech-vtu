@@ -8,11 +8,11 @@ import {
   Home, Wallet as WalletIcon, ShoppingBag, User, LogOut, Loader2,
   Bell, ChevronDown,
 } from 'lucide-react';
-import { useAuth } from '../../contexts/AuthContext';
-import { Logo } from '../../components/Logo';
-import { formatNaira } from '../../lib/utils';
-import { site } from '../../lib/site';
-import { cn } from '../../lib/utils';
+import { useAuth } from '../contexts/AuthContext';
+import { Logo } from '../components/Logo';
+import { formatNaira } from '../lib/utils';
+import { site } from '../lib/site';
+import { cn } from '../lib/utils';
 
 const NAV = [
   { href: '/dashboard', label: 'Home', icon: Home },

@@ -1,4 +1,4 @@
-import { ResellerCTA, Stats, FinalCTA } from '../../../components/marketing/Sections';
+import { ResellerCTA, Stats, FinalCTA } from '../../components/marketing/Sections';
 
 export const metadata = { title: 'Reseller Program' };
 

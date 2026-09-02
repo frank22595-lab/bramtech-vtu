@@ -1,4 +1,4 @@
-import { HowItWorks, Services, FinalCTA } from '../../../components/marketing/Sections';
+import { HowItWorks, Services, FinalCTA } from '../../components/marketing/Sections';
 
 export const metadata = { title: 'How it works' };
 

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeft, MessageCircle } from 'lucide-react';
-import { site } from '../lib/site';
+import { site } from '../../lib/site';
 
 export default function ForgotPasswordPage() {
   return (

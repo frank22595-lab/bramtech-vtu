@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
-import { ResellerCTA, FinalCTA } from '../../../components/marketing/Sections';
+import { ResellerCTA, FinalCTA } from '../../components/marketing/Sections';
 
 export const metadata = { title: 'Pricing' };
 

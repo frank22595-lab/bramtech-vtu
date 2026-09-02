@@ -1,4 +1,4 @@
-import { FAQ } from '../../../components/marketing/Sections';
+import { FAQ } from '../../components/marketing/Sections';
 
 export const metadata = { title: 'FAQ' };
 
