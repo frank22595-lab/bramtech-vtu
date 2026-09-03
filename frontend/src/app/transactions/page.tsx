@@ -1,11 +1,11 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { api, formatNaira, getAccessToken } from '../api-client';
 
-export default function TransactionsPage() {
+function TransactionsInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const ref = searchParams.get('ref');
@@ -38,7 +38,6 @@ export default function TransactionsPage() {
 
   if (loading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
 
-  // Detail view
   if (ref && detail) {
     const isSuccess = detail.status === 'success';
     const isFailed = detail.status === 'failed';
@@ -94,7 +93,6 @@ export default function TransactionsPage() {
     );
   }
 
-  // List view
   return (
     <div className="min-h-screen bg-gray-50">
       <nav className="bg-white border-b p-4">
@@ -134,5 +132,13 @@ export default function TransactionsPage() {
         )}
       </main>
     </div>
+  );
+}
+
+export default function TransactionsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <TransactionsInner />
+    </Suspense>
   );
 }
